@@ -1,0 +1,6 @@
+<!-- 
+   caster를 위해서 임의의 frame을 만들어준다. 
+ -->
+<frame name="caster_frame" attached_to='chassis'>
+    <pose>0.8 0 -0.2 0 0 0</pose>
+</frame>

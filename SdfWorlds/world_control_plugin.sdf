@@ -1,0 +1,30 @@
+<!-- 
+  World control plugin는 world를 제어하는 역할
+  속성 :
+    * <play_pause> : true이면 시뮬레이션을 플레이/일시정지 버튼이 왼쪽 아래 모서리에 표시
+    * <stats_topic> : world stats(simulation time과 real time)을 지정한 topic으로 publish
+    * <start_paused> : true이면 시뮬레이션이 시작될 때 일시정지 
+ -->
+<!-- World control -->
+<plugin filename="WorldControl" name="World control">
+    <gz-gui>
+        <title>World control</title>
+        <property type="bool" key="showTitleBar">false</property>
+        <property type="bool" key="resizable">false</property>
+        <property type="double" key="height">72</property>
+        <property type="double" key="width">121</property>
+        <property type="double" key="z">1</property>
+
+        <property type="string" key="state">floating</property>
+        <anchors target="3D View">
+        <line own="left" target="left"/>
+        <line own="bottom" target="bottom"/>
+        </anchors>
+    </gz-gui>
+
+    <play_pause>true</play_pause>
+    <step>true</step>
+    <start_paused>true</start_paused>
+    <service>/world/world_demo/control</service>
+    <stats_topic>/world/world_demo/stats</stats_topic>
+</plugin>

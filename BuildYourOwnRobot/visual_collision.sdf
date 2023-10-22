@@ -1,0 +1,17 @@
+<!-- 시각 및 충돌 속성 정의 
+geometry: 시각적인 모양을 정의
+material : 시각적인 모양의 색상을 정의 (red/green/blue/alpha로 [0, 1] 값)
+-->
+    <visual name='visual'>
+        <geometry>
+            <box>
+                <size>2.0 1.0 0.5</size>
+            </box>
+        </geometry>
+        <!--let's add color to our link-->
+        <material>
+            <ambient>0.0 0.0 1.0 1</ambient>
+            <diffuse>0.0 0.0 1.0 1</diffuse>
+            <specular>0.0 0.0 1.0 1</specular>
+        </material>
+    </visual>

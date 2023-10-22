@@ -1,0 +1,41 @@
+<!--caster wheel
+왼쪽/오른쪽 wheel 정의와 다른점 : 
+<pose relative_to="chassis">..... </pose>를 사용하지 않고
+
+<pose relative_to='caster_frame'/> 이렇게 표현한다. 
+즉 임의의 frame을 선언하면 해당 frame을 기준으로 pose를 정의할 수 있다.
+-->
+
+<link name='caster'>
+    <pose relative_to='caster_frame'/>
+    <inertial>
+        <mass>1</mass>
+        <inertia>
+            <ixx>0.016</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.016</iyy>
+            <iyz>0</iyz>
+            <izz>0.016</izz>
+        </inertia>
+    </inertial>
+    <visual name='visual'>
+        <geometry>
+            <sphere>
+                <radius>0.2</radius>
+            </sphere>
+        </geometry>
+        <material>
+            <ambient>0.0 1 0.0 1</ambient>
+            <diffuse>0.0 1 0.0 1</diffuse>
+            <specular>0.0 1 0.0 1</specular>
+        </material>
+    </visual>
+    <collision name='collision'>
+        <geometry>
+            <sphere>
+                <radius>0.2</radius>
+            </sphere>
+        </geometry>
+    </collision>
+</link>

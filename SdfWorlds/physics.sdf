@@ -1,0 +1,14 @@
+<!-- 
+
+name : 1ms step이라 이름을 그렇게 줌
+type : physics engine 타입 지정(Ode, Bullet, Simbody, Dart). 하지만 아직 이 tag로 설정되지 않음
+<max_step_size> : 1ms step size. 시뮬레이션 내에 모든 system이 world states와 상호작용이 일어나는 최대 시간 간격
+<real_time_factor> : 1.0이면 real time과 동일하게 시뮬레이션
+
+ -->
+
+<physics name="1ms" type="ignored">
+    <max_step_size>0.001</max_step_size>
+    <real_time_factor>1.0</real_time_factor>
+</physics>
+;

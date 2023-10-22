@@ -1,0 +1,8 @@
+<!-- 
+robot chassis에 lidar를 부착하기 위해서 임의의 frame을 만들어준다.
+
+ -->
+
+<frame name="lidar_frame" attached_to='chassis'>
+    <pose>0.8 0 0.5 0 0 0</pose>
+</frame>

@@ -1,0 +1,9 @@
+<!-- 
+Fuel에서 <> 아이콘을 클릭하여 복사한 것을 붙여넣기 하기
+
+ -->
+<include>
+    <uri>
+    https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke
+    </uri>
+</include>

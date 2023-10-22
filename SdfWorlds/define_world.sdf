@@ -1,0 +1,10 @@
+<!-- 
+    <world> tag로 정의
+ -->
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <world name="world_demo">
+    ...
+    ...
+    </world>
+</sdf>

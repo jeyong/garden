@@ -1,0 +1,9 @@
+<!-- vehicle_blue라는 이름을 갖는 model 정의
+
+좌표계는 world를 기준으로 정의된다.
+http://sdformat.org/spec?ver=1.10&elem=model#model_canonical_link
+
+<pose>는 X Y Z Roll Pitch Yaw 순서로 정의된다.
+ -->
+<model name='vehicle_blue' canonical_link='chassis'>
+    <pose relative_to='world'>0 0 0 0 0 0</pose>

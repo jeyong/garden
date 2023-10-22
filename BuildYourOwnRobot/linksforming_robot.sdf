@@ -1,0 +1,6 @@
+<!-- 모든 model은 links의 그룹으로 joints로 서로 결합시킨다. 
+첫번쨰 link는 chassis라는 이름을 갖는다. 
+pose는 자기 모델에 대한 상대 좌표
+-->
+    <link name='chassis'>
+        <pose relative_to='__model__'>0.5 0 0.4 0 0 0</pose>

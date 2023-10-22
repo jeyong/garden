@@ -1,0 +1,12 @@
+<!-- chassis의 속성 정의  -->
+<inertial> <!--inertial properties of the link mass, inertia matix-->
+        <mass>1.14395</mass>
+        <inertia>
+            <ixx>0.095329</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.381317</iyy>
+            <iyz>0</iyz>
+            <izz>0.476646</izz>
+        </inertia>
+    </inertial>

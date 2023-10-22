@@ -1,0 +1,9 @@
+<!-- 
+    GZ_SIM_RESOURCE_PATH는 환경변수로 model을 다운받은 폴더를 지정
+ex) export GZ_SIM_RESOURCE_PATH="$HOME/world_tutorial"
+ -->
+<include>
+    <uri>
+    model://Coke
+    </uri>
+</include>

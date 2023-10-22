@@ -1,0 +1,8 @@
+<!-- 
+filename : libgazebo_imu_plugin.so    
+name : plugin 이름
+
+ -->
+<plugin filename="gz-sim-imu-system"
+        name="gz::sim::systems::Imu">
+</plugin>

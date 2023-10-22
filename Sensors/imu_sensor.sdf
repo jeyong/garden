@@ -1,0 +1,17 @@
+<!-- 
+  sensor는 보통 model의 link에 추가
+  여기서는 chassis link에 추가   
+
+  * <always_on> : true이면 update rate에 따라서 update된다.
+  * <update_rate> : sensor data가 생성되는 주기
+  * <visualize> : true이면 GUI상에 sensor를 시각화
+  * <topic> : data가 publish되는 topic
+ 
+ -->
+
+<sensor name="imu_sensor" type="imu">
+    <always_on>1</always_on>
+    <update_rate>1</update_rate>
+    <visualize>true</visualize>
+    <topic>imu</topic>
+</sensor>

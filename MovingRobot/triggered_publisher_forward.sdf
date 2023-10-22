@@ -1,0 +1,20 @@
+<!-- 
+    Triggered Publisher plugin은 
+    <input> 메시지를 subscribe하고 대한 응답으로 <output> topic으로 message를 publish
+
+Left ➞ 16777234 ➞ linear: {x: 0.0}, angular: {z: 0.5}
+Up ➞ 16777235 ➞ linear: {x: 0.5}, angular: {z: 0.0}
+Right ➞ 16777236 ➞ linear: {x: 0.0}, angular: {z: -0.5}
+Down ➞ 16777237 ➞ linear: {x: -0.5}, angular: {z: 0.0}
+ -->
+
+<!-- Moving Forward-->
+<plugin filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">16777235</match>
+    </input>
+    <output type="gz.msgs.Twist" topic="/cmd_vel">
+        linear: {x: 0.5}, angular: {z: 0.0}
+    </output>
+</plugin>

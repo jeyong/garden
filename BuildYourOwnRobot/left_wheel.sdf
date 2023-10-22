@@ -1,0 +1,19 @@
+<!-- 
+   왼쪽 바퀴.  
+   chassis에 상대적인 위치와 각도를 가지고 있음.
+   wheel은 chassis의 뒤쪽에서 왼쪽에 위치
+   -1.5707은 -90도를 의미하므로 x축을 기준으로 -90도 회전
+ -->
+<link name='left_wheel'>
+    <pose relative_to="chassis">-0.5 0.6 0 -1.5707 0 0</pose>
+    <inertial>
+        <mass>1</mass>
+        <inertia>
+            <ixx>0.043333</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.043333</iyy>
+            <iyz>0</iyz>
+            <izz>0.08</izz>
+        </inertia>
+    </inertial>

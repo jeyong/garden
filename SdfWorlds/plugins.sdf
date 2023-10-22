@@ -1,0 +1,13 @@
+<!-- 
+Physics plugin : world의 다이나믹 시뮬레이션
+UserCommands plugin :  models 생성, models 이동, 삭제, 기타 사용자 명령
+ -->
+<plugin
+    filename="gz-sim-physics-system"
+    name="gz::sim::systems::Physics">
+</plugin>
+
+<plugin
+    filename="gz-sim-user-commands-system"
+    name="gz::sim::systems::UserCommands">
+</plugin>

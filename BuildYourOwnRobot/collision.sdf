@@ -1,0 +1,13 @@
+<!-- collision 정의
+충돌 계산에 사용
+즉 보이는 것과 실제 충돌 계산에 사용되는 것은 다를 수 있음
+ -->
+        <collision name='collision'>
+            <geometry>
+                <box>
+                    <size>2.0 1.0 0.5</size>
+                </box>
+            </geometry>
+        </collision>
+    </link>
+</model>

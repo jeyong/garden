@@ -1,0 +1,24 @@
+<!-- 
+    vehicle_blue model tag 내부에 아래 코드 추가.
+    robot을 움직이기 위한 plugin으로 differentially driver를 사용
+ 
+* library의 file name : libgz-sim-diff-drive-system.so
+* plugin의 name : gz::sim::systems::DiffDrive
+
+* <left_joint>와 <right_joint>는 각각 robot의 몸퉁을 왼쪽 바퀴와 오른쪽 바퀴로 연결하는 joints를 정의
+
+* <wheel_separation> : 각 wheel은 chassis에서 0.6m씩 떨어져 있으므로 이 wheel의 거리는 1.2m가 된다
+* <wheel_radius> : wheel의 반지름은 0.4m이다
+* <odom_publish_frequency> : odometry를 publish하는 frequency를 정의로 /model/vehicle_blue/odometry topic에서 publish된다
+* <topic> : DiffDrive plugin의 입력으로 사용하는 cmd_vel topic이다. 
+ -->
+<plugin
+    filename="gz-sim-diff-drive-system"
+    name="gz::sim::systems::DiffDrive">
+    <left_joint>left_wheel_joint</left_joint>
+    <right_joint>right_wheel_joint</right_joint>
+    <wheel_separation>1.2</wheel_separation>
+    <wheel_radius>0.4</wheel_radius>
+    <odom_publish_frequency>1</odom_publish_frequency>
+    <topic>cmd_vel</topic>
+</plugin>

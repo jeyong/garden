@@ -1,0 +1,9 @@
+<!-- 
+GUI 정의할때 <gui> tag 아래에 추가하면 됨
+gazebo-gui는 다양한 plugins을 제공하며 이 중에 선택이 가능하다.
+ -->
+
+<gui fullscreen="0">
+    ...
+    ...
+</gui>

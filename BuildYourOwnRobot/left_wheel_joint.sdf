@@ -1,0 +1,24 @@
+<!-- 
+모든 joint는 2개 links를 연결하는 역할
+joint의 type은 revolute. 
+pose는 left_wheel 기준.
+parent와 child link를 정의한다.
+
+<axis>는 회전축을 정의 : 회전축은 parent link와 child link 어느쪽이 든 가능하다.
+__model__ 자신 frame의 y축을 회전축으로 지정. (1로 지정)
+
+회전 각도는 +,- 무한대로 가능
+ -->
+            <!--left wheel joint-->
+            <joint name='left_wheel_joint' type='revolute'>
+                <pose relative_to='left_wheel'/>
+                <parent>chassis</parent>
+                <child>left_wheel</child>
+                <axis>
+                    <xyz expressed_in='__model__'>0 1 0</xyz> <!--can be descired to any frame or even arbitrary frames-->
+                    <limit>
+                        <lower>-1.79769e+308</lower>    <!--negative infinity-->
+                        <upper>1.79769e+308</upper>     <!--positive infinity-->
+                    </limit>
+                </axis>
+            </joint>
