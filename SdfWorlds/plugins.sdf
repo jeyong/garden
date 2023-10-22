@@ -11,3 +11,11 @@ UserCommands plugin :  models 생성, models 이동, 삭제, 기타 사용자 �
     filename="gz-sim-user-commands-system"
     name="gz::sim::systems::UserCommands">
 </plugin>
+
+<!-- 
+    화면에 표시되는 scene을 broadcast하는 plugin
+ -->
+<plugin
+    filename="gz-sim-scene-broadcaster-system"
+    name="gz::sim::systems::SceneBroadcaster">
+</plugin>
