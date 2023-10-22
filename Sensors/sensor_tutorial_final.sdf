@@ -1,6 +1,7 @@
 <!-- 
  실행 : > gz sim sensor_tutorial.sdf  
  > gz topic -e -t /imu  # /imu topic의 data를 확인
+ > gz topic -e -t /lidar
  -->
 <?xml version="1.0" ?>
 <sdf version="1.8">

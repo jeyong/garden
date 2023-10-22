@@ -1,6 +1,16 @@
 <!-- 
 chassis link에 lidar sensor를 부착한다.
-
+* <topic> : lidar data가 publish되는 topic을 정의한다.
+  * <update_rate> : lidar data가 생성되는 frequency이다. 10Hz로 설정하였다.(1초에 10번)
+  * <horizontal>과 <vertical> tag아래 horizontal과 vertical laser rays의 속성을 정의
+  * <samples> : 시뮬레이션의 lidar rays의 개수(laser sweep cycle마다 생성되는)
+  * <resolution> : range data points의 개수를 구할때 = resolution * samples
+  * <min_angle>, <max_angle> : 생성된 rays의 각도 범위
+  * <range> tag 아래에 각 시뮬레이션 ray의 range 속성을 지정
+    * <min>, <max> : 각 lidar ray에 대한 최소/최대 거리 정의
+    * <resolution> : 각 lidar ray의 linear resolution 정의
+  * <always_on> : true이면 sensor은 항상 <update_rate> 값에 따라사ㅓ update된다.
+  * <visualize> : true이면 센서가 GUI에 시각화된다.
  -->
 <sensor name='gpu_lidar' type='gpu_lidar'>"
     <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
